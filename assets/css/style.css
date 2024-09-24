@@ -194,6 +194,7 @@ img {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
     background-position: center;
     background-size: cover;
+    margin-bottom: 60px;
 }
 
 /* PORTFOLIO */
