@@ -17,13 +17,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:20px 0;
+    padding:35px 0;
     list-style: none;
 }
 
 .gallery .controls .buttons{
-    height:40px;
-    width: 140px;
+    height:80px;
+    width: 145px;
     background:#fff;
     color:#666;
     font-size: 20px;
