@@ -72,29 +72,55 @@
 
     <main>
       <div class="container py-5">
-        <h1>Visi & Misi</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="list-group w-25">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action active"
-                aria-current="true"
-              >
-                Visi
-              </a>
-              <a href="#" class="list-group-item list-group-item-action"
-                >Misi</a
-              >
-            </div>
+        <h1 id="title">Visi & Misi</h1>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <article>
+              <div>
+                <img
+                src="https://lspdigital.id/images/homepage/profil2.png"
+                class="img-fluid"
+                width="700px"
+                alt=""
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facilis neque mollitia, natus dolore commodi optio ea nemo dolores illum laudantium est dicta praesentium eos quos, recusandae quas consectetur adipisci, libero aliquid. Alias quisquam pariatur consectetur repellendus illum, obcaecati porro blanditiis. Praesentium quis illum vitae, debitis totam dolorem reprehenderit sapiente fugit illo consectetur molestiae eos ullam mollitia facilis aliquam harum. Quod, similique aliquid qui explicabo molestiae itaque, iste sunt maxime culpa porro totam blanditiis dolore, consequatur corrupti voluptas minima eum veritatis ab? Reprehenderit, quibusdam perferendis cupiditate eum fuga quidem rerum vel ut sed! Quae accusantium eum, maiores odio expedita amet.
+              </p>
+              </div>
+              <div class="py-4" id="visi">
+                <h1>Visi</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis illo itaque autem ipsa aut eius ipsam sed, impedit,
+                  repellat doloribus perspiciatis repellendus est reprehenderit,
+                  soluta dicta? Maxime voluptate nihil excepturi?
+                </p>
+              </div>
+              <div class="py-4" id="misi">
+                <h1>Misi</h1>
+                <p>
+                  <ol>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, saepe.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, saepe.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, saepe.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, saepe.</li>
+                  </ol>
+                </p>
+              </div>
+            </article>
           </div>
-          <div class="col-md-6">
-            <img
-              src="https://lspdigital.id/images/homepage/profil2.png"
-              class="img-fluid"
-              width="700px"
-              alt=""
-            />
+
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 5rem">
+              <div class="p-4">
+                <h4 class="fst-italic">Navigation</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#title" class="fs-5 fw-bold">Intro</a></li>
+                  <li><a href="#visi" class="fs-5 fw-bold">Visi</a></li>
+                  <li><a href="#misi" class="fs-5 fw-bold">Misi</a></li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,34 +205,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".buttons").click(function () {
-          $(this).addClass("active").siblings().removeClass("active");
-
-          var filter = $(this).attr("data-filter");
-
-          if (filter == "all") {
-            $(".image").show(400);
-          } else {
-            $(".image")
-              .not("." + filter)
-              .hide(200);
-            $(".image")
-              .filter("." + filter)
-              .show(400);
-          }
-        });
-
-        $(".gallery").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: {
-            enabled: true,
-          },
-        });
-      });
-    </script>
   </body>
 </html>
